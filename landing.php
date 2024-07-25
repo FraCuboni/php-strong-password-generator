@@ -32,6 +32,8 @@
     $all_characters[] = $numbers;
     $all_characters[] = $special_characters;
 
+    $password = [];
+
     // stampo 12 valori
     for ($i = 1; $i <= $password_lenght; $i++) {
 
@@ -41,16 +43,21 @@
         // ottengo un singolo carattere
         $single_character = $all_characters[$array_choser][rand(0, count($all_characters[$array_choser]) - 1)];
 
-        $password = [];
 
         // creo funzioneper non duplicare i caratteri già utilizzati
         if (!in_array($single_character, $password)) {
-            $password = $single_character;
+            $password[] = $single_character;
         } else {
+            echo '<br>';
             echo 'doppione!' . $single_character;
+            echo '<br>';
         };
 
-        echo $password;
+        if ($i <= $password_lenght) {
+            foreach ($password as $character_output) {
+                echo $character_output;
+            }
+        };
     }
     ?>
 </body>
