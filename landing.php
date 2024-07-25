@@ -14,6 +14,19 @@
 
     echo $password_lenght;
 
+    $alphabet = range('a', 'z');
+    foreach ($alphabet as $character) {
+        echo $character;
+    }
+    $alphabet_big = range('A', 'Z');
+    foreach ($alphabet_big as $character) {
+        echo $character;
+    }
+    $numbers = range('0', '9');
+    foreach ($numbers as $character) {
+        echo $character;
+    }
+
     ?>
 </body>
 
