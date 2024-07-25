@@ -28,7 +28,21 @@
 
                 <div class="card">
                     <div class="card-body">
-                        This is some text within a card body.
+
+                        <form action="landing.php" method="get">
+
+
+                            <div class="input-group">
+
+                                <input name="password_lenght" type="text" class="form-control" placeholder="Lunghezza della password">
+                                <button class="btn btn-outline-secondary" type="sumbit" id="button-addon2">Button</button>
+
+                            </div>
+
+
+
+                        </form>
+
                     </div>
                 </div>
 
